@@ -1,5 +1,5 @@
 # Location Extraction Analyzer
-A visual analytics tool for exploring results of tweet location extraction algorithms. Developed as [my master's thesis project](thesis.pdf). Tweets provided here were modified for anonymization to meet Twitter's terms of service.
+A visual analytics tool for exploring results of tweet location extraction algorithms. Developed as [my master's thesis](thesis.pdf) project. Tweets provided here were modified for anonymization to meet Twitter's terms of service.
 
 ![Screenshot](screenshot.png)
 

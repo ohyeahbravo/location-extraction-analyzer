@@ -1,0 +1,93 @@
+{
+    "name": "location-extraction-analysis",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "npm run server | npm run vue",
+        "server": "pm2 start server.js --watch --name server",
+        "vue": "pm2 start npm --start",
+        "start": "vue-cli-service serve",
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint",
+        "deploy": "sh deploy.sh"
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.12.1",
+        "@mapbox/point-geometry": "^0.1.0",
+        "@turf/turf": "^5.1.6",
+        "apexcharts": "^3.22.2",
+        "axios": "^0.19.2",
+        "chroma-js": "^2.1.0",
+        "core-js": "^3.8.1",
+        "cors": "^2.8.5",
+        "country-js": "0.0.9",
+        "country-list": "^2.2.0",
+        "d3": "^5.16.0",
+        "deck.gl": "^8.3.10",
+        "deepmerge": "^4.2.2",
+        "express": "^4.17.1",
+        "fibers": "^4.0.3",
+        "fs-ndjson": "^1.1.0",
+        "lodash": "^4.17.20",
+        "mapbox-gl": "^1.13.0",
+        "rainbowvis.js": "^1.0.1",
+        "sass": "^1.30.0",
+        "simple-statistics": "^7.3.2",
+        "stopword": "^0.3.4",
+        "three-globe": "^2.11.1",
+        "underscore": "^1.12.0",
+        "vue": "^2.6.12",
+        "vue-apexcharts": "^1.6.0",
+        "vue-css-donut-chart": "^1.3.0",
+        "vue-grid-layout": "^2.3.11",
+        "vue-mapbox": "^0.4.1",
+        "vue-plotly": "^1.1.0",
+        "vue-router": "^3.4.9",
+        "vuetify": "^2.3.19",
+        "vuex": "^3.6.0"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^4.5.9",
+        "@vue/cli-plugin-eslint": "^4.5.9",
+        "@vue/cli-service": "^4.5.9",
+        "@vue/eslint-config-prettier": "^5.0.0",
+        "babel-eslint": "^10.0.3",
+        "eslint": "^5.16.0",
+        "eslint-plugin-prettier": "^3.2.0",
+        "eslint-plugin-vue": "^5.0.0",
+        "node-sass": "^4.14.1",
+        "prettier": "^1.19.1",
+        "sass-loader": "^7.3.1",
+        "style-loader": "^1.3.0",
+        "stylus": "^0.54.8",
+        "stylus-loader": "^3.0.2",
+        "vue-cli-plugin-vuetify": "^2.0.8",
+        "vue-template-compiler": "^2.6.12"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "@vue/prettier"
+        ],
+        "rules": {
+            "no-console": "off"
+        },
+        "parserOptions": {
+            "parser": "babel-eslint"
+        }
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "singleQuote": true
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 10"
+    ]
+}
